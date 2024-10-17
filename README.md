@@ -4,6 +4,14 @@
 This rule engine application allows users to create, modify, evaluate, and combine rules based on user-defined conditions. It utilizes Flask for the API, SQLite for data storage, and a custom Abstract Syntax Tree (AST) structure to represent and evaluate rules.
 
 ## Features
+
+ Create rules using a simple string format.
+- Modify existing rules.
+- Evaluate rules against user data.
+- Combine multiple rules using logical operators.
+- Support for user-defined functions (e.g., `is_adult`, `is_senior`).
+- Persistent storage using SQLite for rules and their AST representations.
+
 - **Rule Creation**: Create rules with user-defined conditions.
 - **Rule Evaluation**: Evaluate rules against user data.
 - **Rule Modification**: Modify existing rules in the database.
