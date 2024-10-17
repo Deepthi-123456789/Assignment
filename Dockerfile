@@ -4,14 +4,15 @@ FROM python:3.10-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements file
-COPY requirements.txt .
+# Copy the application code
+COPY . .
+
+# Install pip and create requirements.txt from existing installed packages
+RUN pip install --no-cache-dir pip
+RUN pip freeze > requirements.txt
 
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the application code
-COPY . .
 
 # Expose the default Flask port
 EXPOSE 5000
