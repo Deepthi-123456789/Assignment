@@ -118,7 +118,7 @@ This rule engine application allows users to create, modify, evaluate, and combi
 
 ## Database
 The application uses SQLite for data persistence. The following tables are created:
-(download db browser(sqlite) to make sure that rule and rule_conditions are created or not)
+(download db browser(sqlite): to make sure that rule and rule_conditions are created or not  if created when we run app.py then rule.db file will be created)
 - `rules`: Stores rule names and rule strings.
 - `rule_conditions`: Stores AST representations of the rules.
 
@@ -132,7 +132,7 @@ The application uses SQLite for data persistence. The following tables are creat
 
 2. Install the required packages:
     ```bash
-    pip install Flask
+    pip install Flask,request and other required packeges
     ```
 
 3. Run the application:
