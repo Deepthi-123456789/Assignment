@@ -1,5 +1,5 @@
 uwsgi
-Flask
+Flask>=2.0
 requests
 pika
 prometheus_client
